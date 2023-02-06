@@ -2,14 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:slidable_application/controller/slidable_controller.dart';
 
-class SlidableScreen extends StatefulWidget {
+class SlidableScreen extends StatelessWidget {
   SlidableScreen({Key? key}) : super(key: key);
 
-  @override
-  State<SlidableScreen> createState() => _SlidableScreenState();
-}
-
-class _SlidableScreenState extends State<SlidableScreen> {
   SlidableController controller = Get.put(SlidableController());
 
   @override
